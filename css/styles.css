@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#intro{
+    background-image: url('/images/intro/resturant-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    color: #FFF;
+    font-size: 1.5rem;
+}
+#intro .container{
+    min-height: 100%;
+    width: 40%;
+}
+.font-heading{
+    font-size: 3rem;
+    font-weight: bold;
+    
+}
+.custom-btn{
+    background-color: #E42A12;
+    border-radius: 20px;
+    color: #FFF;
+    font-weight: bold;
+}
+.image-size{
+    height: 260px;
+    width: 100%;
+}
+.bullet-points {
+    display: flex;
+}
+.bullet-points i{
+    color: #008000;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+#choose-us img{
+    border-radius: 20px;
+    margin: 2rem 0;
+}
+/* Carousel */
+.item-name{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: cadetblue;
+    padding: 8px 15px;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 20px;
+   }
+   .carousel-control-prev,
+   .carousel-control-next {
+     background-color: #ffffff;
+     width: 6vh;
+     height: 6vh;
+     border-radius: 50%;
+     top: 50%;
+     transform: translateY(-50%);
+     border: 2px solid #ffa500 ;
+     color: #ffa500;
+     font-size: 30px;
+     
+   }
+   #btn-left{
+    transform: translateX(-120%);
+   }
+   #btn-right{
+    transform: translateX(120%);
+   }
+   .carousel-control-prev:hover,
+   .carousel-control-next:hover {
+     color: #ffffff;
+     background-color: #ffa500;
+   }
+   #carousal-section img{
+    border-radius: 20px;
+   }
+   #carousal-section .col {
+    position: relative;
+   }
+/* Adding media queries */
+ @media (max-width: 768px) {
+    #intro .container{
+        width: 100%;
+    }
+    #btn-left{
+        transform: translateX(30%);
+        font-size: 2rem;
+       }
+       #btn-right{
+        transform: translateX(-30%);
+        font-size: 2rem;
+       }
+       .carousel-control-prev,
+   .carousel-control-next {
+     background-color: transparent;
+     width: 10vh;
+     height: 10vh;
+   }
+} 
+
