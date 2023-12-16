@@ -1,0 +1,39 @@
+/* Adding media queries */
+
+/* Smallest screens (max-width: 767px): */
+@media (max-width: 767px) {
+    .box .img-wrapper {
+        height: 17em;
+    }
+}
+/* Medium-sized screens (min-width: 768px): */
+@media (min-width: 768px) {
+    .carousel-item {
+        margin-right: 0;
+        flex: 0 0 33.333333%;
+        display: block;
+    }
+    .carousel-inner {
+        display: flex;
+    }
+
+    /* Add any other styles specific to medium-sized screens */
+}
+/* Smaller screens (max-width: 768px): */
+@media (max-width: 768px) {
+    #intro .container {
+        width: 100%;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        background-color: transparent;
+        width: 10vh;
+        height: 10vh;
+        font-size: 2rem;
+    }
+    #recipe-section .container {
+        width: 100%;
+    }
+
+    /* Add any other styles specific to smaller screens */
+}

@@ -1,8 +1,27 @@
+:root{
+    --brand-color:#E42A12;
+    --btn-bg-color:rgba(228, 42, 18, 0.9);
+    --btn-bg-hover-color:rgba(228, 42, 18, 0.7);
+    --white-color:#fff;
+    --star-bg-color: #F6AD01;
+    --heading-color: #484848;
+    --text-color: #808080;
+    --heading-size: 2rem;
+    --text-size: 1.3rem;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+.brand-logo{
+    color: var(--brand-color);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
 #intro{
     background-image: url('/images/intro/resturant-bg.jpg');
     background-size: cover;
@@ -13,25 +32,12 @@
     color: #FFF;
     font-size: 1.5rem;
 }
+
 #intro .container{
     min-height: 100%;
     width: 40%;
 }
-.font-heading{
-    font-size: 3rem;
-    font-weight: bold;
-    
-}
-.custom-btn{
-    background-color: #E42A12;
-    border-radius: 20px;
-    color: #FFF;
-    font-weight: bold;
-}
-.image-size{
-    height: 260px;
-    width: 100%;
-}
+
 .bullet-points {
     display: flex;
 }
@@ -46,14 +52,14 @@
 }
 /* Carousel */
 .box {
-    height: fit-content;
+    height: 260px;
     border-radius: 20px;
     margin: 0 1.5em;
-    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
     border: none;
   }
   .box .img-wrapper {
     max-width: 100%;
+    height: 100% !important;
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
     border-radius: 20px;
     position: relative;
@@ -63,7 +69,7 @@
     border-radius: 20px;
   }
   .carousel-inner {
-    padding: 1em;
+    padding: 1.3rem;
   }
   .item-name{
    position: absolute;
@@ -96,8 +102,11 @@
   }
 
    /* Recipe Section */
+   #recipe-section{
+    padding: 2.7rem 0;
+   }
    #recipe-section .image-size{
-    height: 400px;
+    height: 20rem;
    }
    #recipe-section .container{
     width: 50%;
@@ -108,52 +117,55 @@
    .text-justify{
     text-align: justify;
    }
-/* Adding media queries */
 
-/* Smallest screens (max-width: 767px): */
-@media (max-width: 767px) {
-    .box .img-wrapper {
-        height: 17em;
-    }
+
+   /* footer Section */
+   #footer{
+    padding: 2.7rem 0;
+   }
+   #footer .image-size{
+    height: 80px;
+    width: 80%;
+    border-radius: 20px;
+   }
+
+   #footer .g-logo{
+    height: 100px;
+  }
+  #footer #google-logo{
+    height: 20px;
+  }
+  #footer .bx.bxs-heart{
+    color: var(--brand-color);
+    font-size: 1.5rem;
+  }
+  #footer a{
+    color: var(--brand-color);
+  }
+  #footer .social-icons{
+    font-size: 40px;
+    color: #808080;
+  }
+  #footer .btn{
+    background-color: var(--btn-bg-color);
+    color: var(--white-color);
+    /* outline: none; */
+  }
+
+  #footer .btn:hover{
+    background-color: var(--btn-bg-hover-color);
+  }
+
+  #footer .bx.bxs-star{
+    color: var(--star-bg-color);
+    font-size: 1.3rem;
+    margin: 0;
+  }
+
+  #footer .heading-color{
+    font-size: 1rem;
+    font-weight: bold;
 }
-/* Medium-sized screens (min-width: 768px): */
-@media (min-width: 768px) {
-    .carousel-item {
-        margin-right: 0;
-        flex: 0 0 33.333333%;
-        display: block;
-    }
-    .carousel-inner {
-        display: flex;
-    }
-
-    /* Add any other styles specific to medium-sized screens */
-}
-/* Smaller screens (max-width: 768px): */
-@media (max-width: 768px) {
-    #intro .container {
-        width: 100%;
-    }
-    #btn-left {
-        transform: translateX(30%);
-        font-size: 2rem;
-    }
-    #btn-right {
-        transform: translateX(-30%);
-        font-size: 2rem;
-    }
-    .carousel-control-prev,
-    .carousel-control-next {
-        background-color: transparent;
-        width: 10vh;
-        height: 10vh;
-    }
-    #recipe-section .image-size {
-        height: 50%;
-    }
-    #recipe-section .container {
-        width: 100%;
-    }
-
-    /* Add any other styles specific to smaller screens */
+#footer .text-color{
+    font-size: 0.75rem;
 }

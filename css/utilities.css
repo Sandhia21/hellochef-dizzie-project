@@ -1,0 +1,29 @@
+/* Utility Classes */
+.font-heading{
+    font-size: 3rem;
+    font-weight: bold;  
+}
+.custom-btn{
+    background-color: var(--brand-color);
+    color: var(--white-color);
+    border-radius: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.custom-btn:hover{
+    background-color: var(--btn-bg-hover-color);
+    color: var(--white-color);
+}
+.heading-color{
+    color: var(--heading-color);
+    font-size: var(--heading-size);
+}
+.text-color{
+    color: var(--text-color);
+    font-size: var(--text-size);
+}
+.image-size{
+    height: 260px;
+    width: 100%;
+}
