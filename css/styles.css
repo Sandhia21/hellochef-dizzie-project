@@ -21,7 +21,12 @@
     font-size: 1.4rem;
     font-weight: bold;
 }
-
+.brand-logo:hover{
+    color: rgba(132, 19, 4, 0.9);
+}
+.nav-link.custom-btn{
+    font-size: 1rem;
+}
 #intro{
     background-image: url('/images/intro/resturant-bg.jpg');
     background-size: cover;
@@ -143,7 +148,7 @@
     color: var(--brand-color);
   }
   #footer .social-icons{
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #808080;
   }
   #footer .btn{
@@ -168,4 +173,61 @@
 }
 #footer .text-color{
     font-size: 0.75rem;
+}
+
+#sign-in .container{
+    width: 40%;
+}
+
+#sign-in .custom-btn{
+    width: 100%;
+}
+#or{
+    margin: 1.25rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#or p , #login-with-google p{
+    margin: 0 0.625rem;
+}
+
+.google-logo{
+    height: 1.25rem;
+  }
+
+.line{
+    height: 0.125rem;
+    background-color: var(--text-color);
+    width: 100%;
+}
+
+#login-with-google{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.125rem solid var(--text-color);
+    padding: 0.938rem 0;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#login-with-google:hover{
+    background-color: rgba(228, 42, 18, 0.1);
+    /* color: white; */
+}
+
+#login-btn{
+    width: 100%;
+}
+
+.link{
+    color: var(--brand-color);
+}
+
+.link:hover{
+    color: var(--brand-color);
+    text-decoration: none;
 }

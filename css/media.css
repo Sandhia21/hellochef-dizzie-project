@@ -35,5 +35,9 @@
         width: 100%;
     }
 
+    #sign-in .container{
+        width: 100%;
+    }
+
     /* Add any other styles specific to smaller screens */
 }
